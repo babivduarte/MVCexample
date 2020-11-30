@@ -82,7 +82,7 @@ public class TimeDAO {
             return "Erro ao gravar.";
         }
         
-        return "Gravado com sucesso!";
+        return "Cadastro realizado com sucesso!!";
     }
     
     public String alterar(Time time) {
@@ -104,7 +104,7 @@ public class TimeDAO {
             return "Erro ao alterar. comando: \n"+sql;
         }
         
-        return "Alterado com sucesso!!";
+        return "Alteração realizada com sucesso!!";
     }
     
     public String deletar(String id){
