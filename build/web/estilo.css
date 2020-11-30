@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.center {
+    display: flexbox;
+    align-content: center;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    background-color: buttonface;
+    color: black;
+    padding: 5px;
+}
+
+a:hover {
+    border: 1px solid black;
+}
+
+div#formulario {
+    border: 1px solid black;
+    display: flexbox;
+}
+
