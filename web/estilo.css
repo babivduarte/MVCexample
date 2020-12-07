@@ -11,17 +11,30 @@ body {
 
 h2 {
     text-transform: uppercase;
+    flex-direction: column;
+}
+
+h4 {
+    font-weight: 400;
 }
 
 a {
     text-decoration: none;
-    background-color: buttonface;
-    color: black;
+    background-color: burlywood;
+    color: white;
     padding: 5px;
+    width: 100%;
+    margin: 20px 0;
 }
 
 a:hover {
-    border: 1px solid black;
+    background-color: lightsalmon;
+    color: black;
+}
+
+.columns {
+    display: inline-flex;
+    flex-direction: column;
 }
 
 div#formulario {

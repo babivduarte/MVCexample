@@ -85,15 +85,26 @@ public class timeController extends HttpServlet {
                 String nome = request.getParameter("nome");
                 TimeDAO dao = new TimeDAO();
                 Time time = new Time();
-
+                
                 time = dao.buscar(nome);
-
+                
                 out.println("<b>ID: " + time.getId() + "</b><br>");
                 out.println("Nome: " + time.getNomeTime() + "<br>");
                 out.println("Cidade: " + time.getCidadeTime() + "<br>");
                 out.println("Estado: " + time.getEstadoTime() + "<br>");
                 out.println("País: " + time.getPaisTime() + "<br><br>");
 
+            }
+            if ("deleta".equals(flag)) {
+                request.getRequestDispatcher("view/deletarTime.jsp").forward(request, response);
+            }
+            if ("deletar".equals(flag)) {
+                response.setContentType("text/html;charset=ISO=8859-1");
+
+                String id = request.getParameter("id");
+                
+                TimeDAO dao = new TimeDAO();
+                out.print(dao.deletar(id));
             }
         }
     }

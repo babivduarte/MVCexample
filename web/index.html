@@ -15,12 +15,15 @@ and open the template in the editor.
     </head>
     <body>
         <div class="center">
-            <h2 class="center">Cadastro de Times de Futebol</h2>
+            <h2>Cadastro de Times de Futebol</h2>
             <!--Chamando a página cadastroTime.jsp através do timeController-->
-            <a href="timeController?flag=cadastro">Iniciar Cadastro</a>
-            <a href="timeController?flag=listar">Listar Cadastros</a>
-            <a href="timeController?flag=alteracao">Alterar um Cadastro</a>
-            <a href="timeController?flag=busca">Buscar por Nome</a>
+            <div class="columns">
+                <a href="timeController?flag=cadastro">Iniciar Cadastro</a>
+                <a href="timeController?flag=listar">Listar Cadastros</a>
+                <a href="timeController?flag=alteracao">Alterar um Cadastro</a>
+                <a href="timeController?flag=busca">Buscar por Nome</a>
+                <a href="timeController?flag=deleta">Remover um Cadastro</a>
+            </div>
         </div>    
     </body>
 </html>
